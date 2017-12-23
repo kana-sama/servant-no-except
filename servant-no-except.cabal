@@ -1,0 +1,20 @@
+name:               servant-no-except
+version:            1.0
+build-type:         Simple
+cabal-version:      >= 1.10
+
+executable servant-no-except
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  build-depends:       base
+                     , aeson
+                     , containers
+                     , servant-server
+                     , universum
+                     , warp
+  ghc-options:         -Wall
+  default-language:    Haskell2010
+  default-extensions:  GeneralizedNewtypeDeriving
+                       NoImplicitPrelude
+                       OverloadedStrings
+                       RecordWildCards
